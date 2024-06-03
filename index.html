@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
+        <nav>
+            <div class="logoicon">
+                <img src="Images/IconDB.png" alt="logo" width="50px" height="50px">
+            </div>
+
+            <section>
+                <a href="#Home" class="nav-item">Home</a>
+                <a href="#facility" class="nav-item">Our Facilities</a>
+                <a href="#message-us" class="nav-item">Message Us</a>
+            </section>
+        </nav>
+
+        <hr>
+
+        <section class="section-container">
+            <!--Home-->
+            <section id="Home">
+                <header>
+                    <h1>Hi Kevin, Welcome To Website</h1>
+                </header>
+
+                <article>
+                    <p>Lorem ipsum dolor sit amet</p>
+
+                    <div class="banner-container"></div>
+                </article>
+            </section>
+
+            <hr>
+
+            <!--Our Facilities-->
+            <section id="facility">
+                <header>
+                    <h1>Our Facilities</h1>
+                </header>
+
+                <article class="facility-list">
+                   <div>
+                        <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
+                        <h5>Professional Teacher</h5>
+                   </div>
+
+                   <div>
+                    <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+               </div>
+
+               <div>
+                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
+                <h5>Free Refill</h5>
+            </div>
+
+                </article>
+            </section>
+
+            <hr>
+
+            <!--Message Us-->
+            <section id="message-us">
+                <header>
+                    <h1>Message Us</h1>
+                </header>
+                
+                <section class="messageus-section">
+                    <!--Form-->
+                    <section>
+                        <label for="name">Nama : </label>
+                        <input id="name" type="text">
+                        <br>
+                        <label for="TTL">Tanggal Lahir : </label>
+                        <input id="TTL" type="date"/>
+                        <br>
         
+                        <label for="jenis-kelamin">Jenis Kelamin :</label>
+                        <input type="radio" id="kelaminlakilaki" name="jenis-kelamin" value="LAKI-LAKI" >
+                        <label for="kelaminlakilaki">Laki-laki</label><br>
+        
+                        <input type="radio" id="kelaminperempuan" name="jenis-kelamin" value="PEREMPUAN" >
+                        <label for="kelaminperempuan">Perempuan</label><br>
+
+                        <label for="pesan">Pesan :</label>
+                        <input type="text" id="pesan_user" class="kotak-pesan">
+        
+                        <input type="submit" value="submit">
+                    </form>
+                    </section>
+
+                    <!--Result-->
+                    <section class="result-container">
+                        <div class="form-result">
+
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+
+        </footer>
     </body>
 </html>
