@@ -3,7 +3,9 @@
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 nav>section {
     display: flex;
@@ -23,14 +25,16 @@ nav>section {
     text-decoration: none;
 }
 
-.banner-container {
+.banner-container>img {
     height: 258px;
     border: 1px solid black;
+    width: 400px;
 }
 
 .facility-list { 
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .form-result {
@@ -42,12 +46,8 @@ nav>section {
 
 .messageus-section {
     display: flex;
-    width: 100px;
 }
 
-.result-container {
-    width: 100%;
-}
 
 .kotak-pesan {
     display: flex;
@@ -55,6 +55,12 @@ nav>section {
     width: 250px;
 }
 
-.section-container {
-    
+.formulir {
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
 }

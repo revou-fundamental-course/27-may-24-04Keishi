@@ -23,14 +23,16 @@
         <section class="section-container">
             <!--Home-->
             <section id="Home">
-                <header>
-                    <h1>Hi Kevin, Welcome To Website</h1>
+                <header style="text-align: center; font-family: system-ui;">
+                    <h1>Avada Hotel & Suite</h1>
                 </header>
 
                 <article>
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p style="text-align: center; font-family: math;">The place where beauty sleeps</p>
 
-                    <div class="banner-container"></div>
+                    <div class="banner-container" style="display: flex; justify-content: space-evenly;">
+                        <img src="Images/hotel1.jpg" alt="">
+                    </div>
                 </article>
             </section>
 
@@ -44,18 +46,18 @@
 
                 <article class="facility-list">
                    <div>
-                        <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
-                        <h5>Professional Teacher</h5>
+                        <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                        <h5>Clean Room</h5>
                    </div>
 
                    <div>
-                    <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+                    <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                    <h5>Private Pool</h5>
                </div>
 
                <div>
-                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
-                <h5>Free Refill</h5>
+                <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                <h5>Auditorium</h5>
             </div>
 
                 </article>
@@ -71,31 +73,35 @@
                 
                 <section class="messageus-section">
                     <!--Form-->
-                    <section>
+                    <section class="formulir">
                     <form>
+                        <p>
                         <label for="name">Nama : </label>
                         <input id="name" type="text">
-                        <br>
+                        </p>
+                        <p>
                         <label for="TTL">Tanggal Lahir : </label>
                         <input id="TTL" type="date"/>
-                        <br>
+                        </p>
         
+                        <p>
                         <label for="jenis-kelamin">Jenis Kelamin :</label>
-                        <input type="radio" id="kelaminlakilaki" name="jenis-kelamin" value="LAKI-LAKI" >
+                        <input type="radio" id="kelaminlakilaki" name="jenis-kelamin" value="">
                         <label for="kelaminlakilaki">Laki-laki</label>
-        
-                        <input type="radio" id="kelaminperempuan" name="jenis-kelamin" value="PEREMPUAN">
-                        <label for="kelaminperempuan">Perempuan</label><br>
+                        <input type="radio" id="kelaminperempuan" name="jenis-kelamin" value="">
+                        <label for="kelaminperempuan">Perempuan</label>
+                        </p>
 
+                        <p>
                         <label for="pesan">Pesan :</label>
                         <input type="text" id="pesan_user" class="kotak-pesan">
-        
+                        </p>
                         <input type="submit" value="submit">
                     </form>
                     </section>
 
                     <!--Result-->
-                    <section class="result-container">
+                    <section>
                         <div class="form-result">
 
                         </div>
