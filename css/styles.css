@@ -32,15 +32,14 @@ nav>section {
 }
 
 .banner-container {
-    height: 450px;
-    border: 1px solid black;
-    width: 900px;
+    height: 585px;
+    width: 1000px;
     
 }
 
 .facility-list { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: -webkit-center;
 }
 
@@ -73,6 +72,10 @@ nav>section {
 
     .facility-list{
         flex-direction: column;
+    }
+
+    .slides {
+        margin: 0px;
     }
 }
 
@@ -115,7 +118,7 @@ img.displaySlide{
 
 .slider button {
     position: absolute;
-    top: 100%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.50);

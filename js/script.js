@@ -1,6 +1,6 @@
 // Ini Javascript
 
-unction replaceName(){
+function replaceName(){
     let name = prompt("Siapakah nama anda?", "");
     document.getElementById("yourname").innerHTML = name;
 } 
@@ -39,7 +39,7 @@ function prevSlide() {
 function nextSlide() {
     slideIndex++;
     showSlide(slideIndex);
-}
+} console.log()
 
 const inputField = document.getElementById("input");
 const result_row = document.getElementById("results");
