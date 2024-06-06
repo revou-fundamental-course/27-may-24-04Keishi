@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <title>Website</title>
     </head>
@@ -28,7 +30,7 @@
                 <article>
                     <p style="text-align: center; font-family: math;">Hello, <span id="yourname">Visitor</span> welcome to our website!</p>
 
-                    <div class="banner-container" style="display: flex; justify-content: space-evenly; margin: auto;">
+                    <div class="banner-container">
                         <div class="slider">
                             <div class="slides">
                                 <img class="slide" src="Images/hall1.jpg" alt="Image 1">
@@ -44,10 +46,10 @@
                 </article>
             </section>
 
-            <hr>
 
             <!--Our Facilities-->
             <section id="facility">
+                <hr>
                 <header>
                     <h1>Our Facilities</h1>
                 </header>
@@ -77,44 +79,47 @@
             <hr>
 
             <!--Message Us-->
-            <section id="message-us">
+            <section class="message-us" id="message-us">
                 <header>
                     <h1>Message Us</h1>
                 </header>
                 
-                <section class="messageus-section">
+                <div class="messageus-container">
                     <!--Form-->
-                    <section class="formulir">
-                    <form>
+                    <form onsubmit="return handleSubmit(event)">
                         <p>
                         <label for="name">Nama : </label>
-                        <input id="name">
+                        <input type="text" id="name" name="name" required>
                         </p>
                         <p>
-                        <label for="TTL">Tanggal Lahir : </label>
-                        <input id="TTL" type="date"/>
+                        <label for="dob">Tanggal Lahir : </label>
+                        <input id="dob" type="date" name="dob" required/>
                         </p>
         
-                        <p>
-                        <label for="jenis-kelamin">Jenis Kelamin :</label>
-                        <input type="radio" id="kelamin" name="jenis-kelamin" value="">
-                        <label for="kelaminlakilaki">Laki-laki</label>
-                        <input type="radio" id="kelamin" name="jenis-kelamin" value="">
-                        <label for="kelaminperempuan">Perempuan</label>
-                        </p>
+                        <label for="gender">Jenis Kelamin :</label>
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender" value="laki-laki" required>
+                            <label for="male">laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="perempuan" required>
+                            <label for="female">perempuan</label>
+                        </div>
 
                         <p>
-                        <label for="pesan">Pesan :</label>
-                        <input type="text" id="pesan_user" class="kotak-pesan">
+                        <label for="message">Pesan :</label>
+                        <textarea id="message-box" name="pesan" required></textarea>
                         </p>
-                        <input type="button" value="Submit">
+                        <button type="submit">Submit</button>
                     </form>
                     </section>
 
                     <!--Result-->
                     <section>
-                        <div class="form-result">
-
+                        <div class="info">
+                            <p><b>Current Time:</b> 6/6/2024, 21:55:16 PM</p> <br>
+                            <p><b>Nama:</b>Kevin Chandra</p>
+                            <p><b>Tanggal Lahir:</b>17-04-2006</p>
+                            <p><b>Jenis Kelamin:</b>laki-laki</p>
+                            <p><b>Pesan:</b> Sedang belajar membuat website</p>
                         </div>
                     </section>
                 </section>

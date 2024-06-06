@@ -34,20 +34,13 @@ nav>section {
 .banner-container {
     height: 585px;
     width: 1000px;
-    
+    margin: auto;
 }
 
 .facility-list { 
     display: flex;
     justify-content: space-evenly;
     text-align: -webkit-center;
-}
-
-.form-result {
-    border: 1px solid black;
-    height:  150px;
-    width: 350px;
-    margin-left: auto;
 }
 
 .messageus-section {
@@ -65,19 +58,6 @@ nav>section {
     width: 500px;
 }
 
-@media only screen and (max-width: 637px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .facility-list{
-        flex-direction: column;
-    }
-
-    .slides {
-        margin: 0px;
-    }
-}
 
 #audi {
     background-image: url('/../Images/auditorium.jpg');
@@ -139,4 +119,42 @@ img.displaySlide{
 
 .next {
     right: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .facility-list{
+        flex-direction: column;
+    }
+
+    .slides {
+        margin-bottom: 50px;
+        margin-right: 17px;
+    }
+
+    .next {
+        margin-right: 17px;
+    }
+
+    .prev {
+        margin-bottom: 100px;
+    }
+
+    .banner-container {
+        height: 200px;
+        width: 415px;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .facility>hr {
+        margin-top: 50px;;
+    }
+
+    .slider button {
+        transform: translateY(-84%);
+    }
 }
