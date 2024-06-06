@@ -15,6 +15,12 @@ nav>section {
 .logoicon {
     height: 50px;
     width: 50px;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-image: url(/../Images/logoav.png);
+    background-position: center;
+    background-size: 250%;
+    margin: 10px;
 }
 
 .nav-item {
@@ -25,16 +31,19 @@ nav>section {
     text-decoration: none;
 }
 
-.banner-container>img {
-    height: 258px;
+.banner-container {
+    height: 450px;
     border: 1px solid black;
-    width: 400px;
+    width: 900px;
+    background-image: url(/../Images/hotel1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .facility-list { 
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-between;
+    text-align: -webkit-center;
 }
 
 .form-result {
@@ -59,8 +68,30 @@ nav>section {
     width: 500px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 637px) {
     nav {
         flex-direction: column;
     }
+
+    .facility-list{
+        flex-direction: column;
+    }
+}
+
+#audi {
+    background-image: url('/../Images/auditorium.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#ppool {
+    background-image: url('/../Images/pool2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#roomf {
+    background-image: url('/../Images/room1.jpg');
+    background-position: center;
+    background-size: cover;
 }

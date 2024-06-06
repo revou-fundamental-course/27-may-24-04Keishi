@@ -7,9 +7,7 @@
 
     <body>
         <nav>
-            <div class="logoicon">
-                <img src="Images/IconDB.png" alt="logo" width="50px" height="50px">
-            </div>
+            <div class="logoicon"></div>
 
             <section>
                 <a href="#Home" class="nav-item">Home</a>
@@ -28,11 +26,9 @@
                 </header>
 
                 <article>
-                    <p style="text-align: center; font-family: math;">The place where beauty sleeps</p>
+                    <p style="text-align: center; font-family: math;">Hello, <span id="yourname">Visitor</span> welcome to our website!</p>
 
-                    <div class="banner-container" style="display: flex; justify-content: space-evenly;">
-                        <img src="Images/hotel1.jpg" alt="">
-                    </div>
+                    <div class="banner-container" style="display: flex; justify-content: space-evenly;"></div>
                 </article>
             </section>
 
@@ -46,17 +42,20 @@
 
                 <article class="facility-list">
                    <div>
-                        <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                        <div id="roomf" style="width: 200px; height: 200px; border: 1px solid black; border-radius: 100%;">
+                            
+                        </div>
                         <h5>Clean Room</h5>
+                        
                    </div>
 
                    <div>
-                    <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                    <div id="ppool" style="width: 200px; height: 200px; border: 1px solid black; border-radius: 100%;"></div>
                     <h5>Private Pool</h5>
                </div>
 
                <div>
-                <div style="width: 70px; height: 70px; border: 1px solid black; border-radius: 100%;"></div>
+                <div id="audi" style="width: 200px; height: 200px; border: 1px solid black; border-radius: 100%;"></div>
                 <h5>Auditorium</h5>
             </div>
 
@@ -77,7 +76,7 @@
                     <form>
                         <p>
                         <label for="name">Nama : </label>
-                        <input id="name" type="text">
+                        <input id="name">
                         </p>
                         <p>
                         <label for="TTL">Tanggal Lahir : </label>
@@ -86,9 +85,9 @@
         
                         <p>
                         <label for="jenis-kelamin">Jenis Kelamin :</label>
-                        <input type="radio" id="kelaminlakilaki" name="jenis-kelamin" value="">
+                        <input type="radio" id="kelamin" name="jenis-kelamin" value="">
                         <label for="kelaminlakilaki">Laki-laki</label>
-                        <input type="radio" id="kelaminperempuan" name="jenis-kelamin" value="">
+                        <input type="radio" id="kelamin" name="jenis-kelamin" value="">
                         <label for="kelaminperempuan">Perempuan</label>
                         </p>
 
@@ -96,7 +95,7 @@
                         <label for="pesan">Pesan :</label>
                         <input type="text" id="pesan_user" class="kotak-pesan">
                         </p>
-                        <input type="submit" value="submit">
+                        <input type="submit">
                     </form>
                     </section>
 
@@ -113,5 +112,6 @@
         <footer>
 
         </footer>
+<script src="js/script.js"></script>
     </body>
 </html>
