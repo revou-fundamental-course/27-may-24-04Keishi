@@ -35,9 +35,7 @@ nav>section {
     height: 450px;
     border: 1px solid black;
     width: 900px;
-    background-image: url(/../Images/hotel1.jpg);
-    background-position: center;
-    background-size: cover;
+    
 }
 
 .facility-list { 
@@ -94,4 +92,48 @@ nav>section {
     background-image: url('/../Images/room1.jpg');
     background-position: center;
     background-size: cover;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 23px;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+}
+
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
